@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1",
+    "name": "Vehicle Tracking & Fleet Management System",
+    "description": "Developed a scalable Vehicle Tracking and Fleet Management platform for real-time monitoring of fleet operations. The system processes continuous GPS telemetry from vehicle devices and provides live location updates, trip history, route playback, and alerts for events like overspeeding, ignition status changes, and geofence violations. Built using a microservices architecture with NestJS and Node.js, it delivers real-time updates via WebSockets and stores high-frequency tracking data efficiently using PostgreSQL.\n",
+    "technologies": [
+      "Node.js",
+      "NestJS",
+      "PostgreSQL",
+      "Redis",
+      "WebSockets",
+      "REST APIs",
+      "Next.js"
+    ],
+    "images": [
+      "/uploads/projects/1773774177665-vqxihuufyu.png",
+      "/uploads/projects/1773774188032-8z9yqrco2sl.png",
+      "/uploads/projects/1773774188036-u1aar78uxd.png",
+      "/uploads/projects/1773774188039-s5t0qhlsnyj.png",
+      "/uploads/projects/1773774188041-w4u268p6zcs.png",
+      "/uploads/projects/1773774188044-92td77sux2r.png"
+    ],
+    "createdAt": "2026-03-17T18:38:15.475Z",
+    "updatedAt": "2026-03-17T19:03:10.110Z"
+  },
+  {
+    "id": "2",
+    "name": "CMS For Vehicle and Fleet Management",
+    "description": "Developed a scalable Content Management System (CMS) that enables organizations to efficiently manage website content, pages, and media through a centralized dashboard. The platform provides role-based access control, dynamic page management, and API-driven content delivery for frontend applications. Built using NestJS and Node.js, the system exposes secure REST APIs and uses PostgreSQL for reliable data storage, ensuring performance, flexibility, and easy content management across multiple pages and sections.\n",
+    "technologies": [
+      "Node.js",
+      "NestJS",
+      "PostgreSQL",
+      "Puppeteer",
+      "Redis",
+      "REST APIs",
+      "Next.js"
+    ],
+    "images": [
+      "/uploads/projects/1773774215042-q9ft76ec8a.png",
+      "/uploads/projects/1773774215045-jyfsnlyvbuh.png",
+      "/uploads/projects/1773774215046-6ng813zv1bv.png",
+      "/uploads/projects/1773774215047-tg217dt6g9.png",
+      "/uploads/projects/1773774215048-oxhhcbk29we.png",
+      "/uploads/projects/1773774215049-qwk6qwji48s.png",
+      "/uploads/projects/1773774215050-qowf46iff8i.png",
+      "/uploads/projects/1773774215051-1h79kmkjro1.png"
+    ],
+    "createdAt": "2026-03-17T18:38:15.475Z",
+    "updatedAt": "2026-03-17T19:03:36.421Z"
+  },
+  {
+    "id": "3",
+    "name": "Building Contracting & Project Management System",
+    "description": "System to manage construction projects, contractors, and resources. Covers project planning, progress tracking, contractor/subcontractor management, budget and expense tracking, material inventory, procurement, and document management.",
+    "technologies": [
+      "NestJS",
+      "Next.js",
+      "PostgreSQL",
+      "TypeScript",
+      "REST APIs",
+      "Role-Based Access Control"
+    ],
+    "images": [
+      "/uploads/projects/1773772719858-4ha8zcd0qtz.png",
+      "/uploads/projects/1773772719860-bjo3vllek6c.png",
+      "/uploads/projects/1773772719861-6zw73j1k7dg.png",
+      "/uploads/projects/1773772719862-2wogpfifkwr.png",
+      "/uploads/projects/1773772719863-tzxbjn1v21.png",
+      "/uploads/projects/1773772719870-qolv8sjy7l.png",
+      "/uploads/projects/1773772719871-ju876pxq9l.png",
+      "/uploads/projects/1773772719872-0g17h63ojteu.png",
+      "/uploads/projects/1773772719873-wawf4mwuo7.png"
+    ],
+    "createdAt": "2026-03-17T18:38:15.475Z",
+    "updatedAt": "2026-03-17T18:38:42.070Z"
+  },
+  {
+    "name": "Telesales Automation Platform with WhatsApp Business API & WebSockets",
+    "description": "Designed and developed a scalable, real-time telesales automation platform leveraging WhatsApp Business APIs and WebSocket-based communication to streamline customer engagement and sales workflows. The system enables agents to manage high-volume conversations, automate follow-ups, and track leads efficiently within a unified interface.\n\nArchitected a microservices-driven backend (using NestJS) to handle messaging queues, session management, and API integrations, ensuring high availability and fault tolerance. Implemented real-time bidirectional communication using WebSockets to provide instant message delivery, typing indicators, and live status updates for agents.\n\nIntegrated WhatsApp Business API for sending templated messages, handling inbound/outbound communication, and managing webhook events securely. Built intelligent lead distribution and tracking mechanisms, allowing teams to monitor conversion pipelines and agent performance in real time.\n\nOptimized system performance with asynchronous processing, caching strategies, and event-driven design patterns, enabling the platform to handle concurrent users and large-scale messaging operations.",
+    "technologies": [
+      "NestJS (Node.js)",
+      "TypeScript",
+      "WebSockets (Socket.IO)",
+      "WhatsApp Business API (Webhooks)",
+      "Microservices Architecture",
+      "PostgreSQL/MongoDB",
+      "Prisma/Mongoose",
+      "Redis (Caching & Queues)",
+      "REST APIs",
+      "JWT Authentication",
+      "Docker"
+    ],
+    "images": [
+      "/uploads/projects/1773773948886-3v8dxsdjnkp.png",
+      "/uploads/projects/1773773948888-f7jr4t06bp6.png",
+      "/uploads/projects/1773773948890-9woo7s0i7y.png",
+      "/uploads/projects/1773773948892-bwb5rsfu9zo.png",
+      "/uploads/projects/1773773948893-pruklchynbg.png",
+      "/uploads/projects/1773773948894-1cz2dbexatqh.png",
+      "/uploads/projects/1773773948895-zg5812nlhjq.png"
+    ],
+    "id": "1773773904348",
+    "createdAt": "2026-03-17T18:58:24.348Z",
+    "updatedAt": "2026-03-17T18:59:10.672Z"
+  }
+]
