@@ -21,7 +21,11 @@
       "/uploads/projects/1773774188044-92td77sux2r.png"
     ],
     "createdAt": "2026-03-17T18:38:15.475Z",
-    "updatedAt": "2026-03-17T19:03:10.110Z"
+    "updatedAt": "2026-03-18T17:28:50.219Z",
+    "impact": "Built a real-time vehicle tracking and fleet management platform enabling live location monitoring, trip history analysis, and operational control using WebSockets and a microservices architecture. Improved fleet visibility and decision-making by providing instant tracking updates and scalable backend services capable of handling high-frequency location data streams.",
+    "architecture": "Designed using a microservices architecture to handle high-frequency real-time location updates. The system consists of independent services for tracking, user management, and analytics, communicating via REST and message queues. Real-time communication is powered by WebSockets to stream live vehicle data to clients. PostgreSQL is used for persistent storage, while caching mechanisms optimize frequent reads. The system is horizontally scalable to support large fleets and concurrent users.",
+    "githubUrl": "",
+    "liveUrl": ""
   },
   {
     "id": "2",
@@ -47,7 +51,11 @@
       "/uploads/projects/1773774215051-1h79kmkjro1.png"
     ],
     "createdAt": "2026-03-17T18:38:15.475Z",
-    "updatedAt": "2026-03-17T19:03:36.421Z"
+    "updatedAt": "2026-03-18T17:29:40.333Z",
+    "impact": "Developed a centralized content and operations management system to control fleet data, driver records, routes, and configurations. Streamlined administrative workflows and reduced manual overhead by enabling dynamic control over system entities through a structured and role-based interface.",
+    "architecture": "Built on a modular Microservice architecture with clearly separated domains such as vehicles, drivers, routes, and permissions. Implemented RESTful APIs using NestJS with role-based access control (RBAC) for secure operations. PostgreSQL is used for relational data management, ensuring consistency across entities. The frontend communicates via API layer, enabling centralized control.",
+    "githubUrl": "",
+    "liveUrl": ""
   },
   {
     "id": "3",
@@ -73,7 +81,11 @@
       "/uploads/projects/1773772719873-wawf4mwuo7.png"
     ],
     "createdAt": "2026-03-17T18:38:15.475Z",
-    "updatedAt": "2026-03-17T18:38:42.070Z"
+    "updatedAt": "2026-03-18T17:29:56.649Z",
+    "impact": "Designed and implemented a real-time telesales automation platform integrating WhatsApp Business API with WebSockets to enable instant communication, lead tracking, and agent coordination. Increased sales team productivity by automating outreach workflows, reducing response time, and enabling scalable real-time messaging infrastructure.",
+    "architecture": "Structured using a layered architecture separating business logic, data access, and presentation layers. The backend exposes REST APIs for managing projects, tasks, and resources, while the frontend consumes these services for real-time updates. Data is stored in PostgreSQL with relational mapping for project hierarchies. Designed for extensibility to support additional modules like billing, reporting, and notifications.",
+    "githubUrl": "",
+    "liveUrl": ""
   },
   {
     "name": "Telesales Automation Platform with WhatsApp Business API & WebSockets",
@@ -102,6 +114,10 @@
     ],
     "id": "1773773904348",
     "createdAt": "2026-03-17T18:58:24.348Z",
-    "updatedAt": "2026-03-17T18:59:10.672Z"
+    "updatedAt": "2026-03-18T17:30:34.487Z",
+    "impact": "Designed and implemented a real-time telesales automation platform integrating WhatsApp Business API with WebSockets to enable instant communication, lead tracking, and agent coordination. Increased sales team productivity by automating outreach workflows, reducing response time, and enabling scalable real-time messaging infrastructure.",
+    "architecture": "Implemented using a microservices-based, event-driven architecture to support real-time communication and high concurrency. Integrated WhatsApp Business API for messaging, with WebSockets enabling instant updates between agents and system. Services handle lead management, messaging, and analytics independently, communicating via queues/events. Redis is used for session and real-time state management, ensuring low latency and scalability under heavy load.",
+    "githubUrl": "",
+    "liveUrl": ""
   }
 ]

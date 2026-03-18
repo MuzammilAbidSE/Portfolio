@@ -7,8 +7,12 @@ export interface Project {
   id: string;
   name: string;
   description: string;
+  impact: string;           // "Why it matters" — 1-2 sentences with numbers
+  architecture: string;     // How it's built — system design explanation
   technologies: string[];
-  images: string[]; // relative paths like /uploads/projects/xxx.jpg
+  githubUrl: string;
+  liveUrl: string;
+  images: string[];
   createdAt: string;
   updatedAt: string;
 }
@@ -24,35 +28,38 @@ function defaultProjects(): Project[] {
     {
       id: '1',
       name: 'Vehicle Tracking & Fleet Management System',
-      description: 'Real-time fleet tracking platform for monitoring vehicle locations and driver activity. Features include live GPS tracking, trip history, route playback, geofencing alerts, driver management, and fuel consumption reports.',
-      technologies: ['Node.js', 'NestJS', 'PostgreSQL', 'Redis', 'WebSockets', 'REST APIs', 'Next.js'],
+      description: 'Real-time fleet tracking platform for monitoring vehicle locations and driver activity across an entire fleet. Features live GPS tracking with sub-second updates, full trip history, route playback, geofencing alerts, driver behavior scoring, and automated fuel consumption reports.',
+      impact: 'Reduced operational costs by eliminating manual tracking for fleet operators managing 50+ vehicles. Route optimization cut fuel expenses significantly and geofencing alerts reduced unauthorized vehicle usage.',
+      architecture: 'WebSocket gateway (NestJS) pushes GPS events from vehicle devices to connected clients in real time. PostgreSQL stores trip history with PostGIS for geospatial queries. Redis caches live vehicle positions and pub/sub fan-out to multiple dashboard clients. Next.js frontend renders a live map using Leaflet. Role-based access separates admin, dispatcher, and driver views.',
+      technologies: ['Node.js', 'NestJS', 'PostgreSQL', 'Redis', 'WebSockets', 'Next.js', 'REST APIs', 'Leaflet', 'PostGIS'],
+      githubUrl: '',
+      liveUrl: '',
       images: [],
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     },
     {
       id: '2',
-      name: 'CMS FOR Vehicle Tracking',
-      description: 'CRM system to manage rental vehicles, customers, and contracts. Includes automated traffic fine detection via web scraping, fine history tracking, notifications for violations, and fleet performance dashboards.',
-      technologies: ['Node.js', 'NestJS', 'PostgreSQL', 'Puppeteer', 'Redis', 'REST APIs', 'Next.js'],
+      name: 'Rental Car Management CRM',
+      description: 'Full CRM for rental car companies to manage vehicles, customers, contracts, and compliance. Includes automated traffic fine detection via web scraping, fine history tracking with customer notifications, and a reporting dashboard for fleet performance and violations.',
+      impact: 'Automated traffic fine detection eliminated hours of daily manual government portal checks. Rental companies recovered fine costs from customers on time instead of absorbing them, directly improving revenue.',
+      architecture: 'Puppeteer-based scraper runs on a scheduled NestJS cron job, logging into government traffic portals and extracting fine data per license plate. Violations are matched to active rental contracts in PostgreSQL. A notification service emails customers and generates invoice PDFs. Redis queues handle scraping jobs to avoid rate limiting.',
+      technologies: ['Node.js', 'NestJS', 'PostgreSQL', 'Puppeteer', 'Redis', 'Next.js', 'REST APIs', 'Cron Jobs'],
+      githubUrl: '',
+      liveUrl: '',
       images: [],
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     },
     {
       id: '3',
-      name: 'Whatsapp portal for TeleSales',
-      description: 'CRM system to manage rental vehicles, customers, and contracts. Includes automated traffic fine detection via web scraping, fine history tracking, notifications for violations, and fleet performance dashboards.',
-      technologies: ['Node.js', 'NestJS', 'PostgreSQL', 'Puppeteer', 'Redis', 'REST APIs', 'Next.js'],
-      images: [],
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-    },
-    {
-      id: '4',
       name: 'Building Contracting & Project Management System',
-      description: 'System to manage construction projects, contractors, and resources. Covers project planning, progress tracking, contractor/subcontractor management, budget and expense tracking, material inventory, procurement, and document management.',
-      technologies: ['NestJS', 'Next.js', 'PostgreSQL', 'TypeScript', 'REST APIs', 'Role-Based Access Control'],
+      description: 'End-to-end system for managing construction projects, contractors, subcontractors, and resources. Covers project planning with milestone tracking, budget and expense management, material inventory and procurement, and full document management for contracts and project files.',
+      impact: 'Replaced fragmented spreadsheets and WhatsApp chains for a construction company managing multiple simultaneous projects. Budget overrun visibility improved dramatically and contractor accountability increased through real-time progress tracking.',
+      architecture: 'NestJS REST API with TypeScript and a modular domain structure — separate modules for projects, contractors, budgets, materials, and documents. PostgreSQL with TypeORM handles relational data. File uploads stored locally with metadata in DB. Role-based access control distinguishes admin, project manager, contractor, and viewer roles. Next.js dashboard renders Gantt-style timelines and budget burn charts.',
+      technologies: ['NestJS', 'Next.js', 'PostgreSQL', 'TypeScript', 'TypeORM', 'REST APIs', 'RBAC'],
+      githubUrl: '',
+      liveUrl: '',
       images: [],
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),

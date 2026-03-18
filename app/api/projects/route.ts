@@ -1,11 +1,10 @@
+import { NextRequest, NextResponse } from "next/server";
 import {
   getProjects,
   createProject,
   deleteProject,
   updateProject,
 } from "@/utility/project";
-import { NextRequest, NextResponse } from "next/server";
-// import { getProjects, createProject, deleteProject, updateProject } from '@/lib/projects';
 
 export async function GET() {
   try {
@@ -29,7 +28,8 @@ export async function POST(req: NextRequest) {
         { status: 400 },
       );
     }
-    const project = createProject({
+    // @ts-ignore
+    const project: any = createProject({
       name,
       description,
       technologies: technologies || [],
