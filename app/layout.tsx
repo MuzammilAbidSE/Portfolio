@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Muhammad Muzammil Abid — Full Stack Engineer',
+  title: 'Haroon Mubeen',
   description: 'Full Stack Engineer specializing in Node.js, NestJS, and Next.js.',
 };
 
