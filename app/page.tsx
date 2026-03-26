@@ -249,13 +249,13 @@ export default function Home() {
                 <div className="w-px h-8 bg-ink/10 hidden sm:block" />
 
                 {/* Social icons */}
-                {socialLinks.map(s => (
+                {/* {socialLinks.map(s => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-2 text-mist hover:text-ink transition-colors group">
                     <span className="group-hover:text-rust transition-colors">{s.icon}</span>
                     <span className="font-mono text-[0.65rem] tracking-wider">{s.label}</span>
                   </a>
-                ))}
+                ))} */}
               </div>
             </div>
 
