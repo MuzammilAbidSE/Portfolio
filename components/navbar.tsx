@@ -34,7 +34,7 @@ export default function Navbar() {
           href="/"
           className="font-display text-xl text-ink hover:text-rust transition-colors"
         >
-          MMA<span className="text-rust">.</span>
+          HM<span className="text-rust">.</span>
         </Link>
 
         {/* Desktop nav */}
