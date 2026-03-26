@@ -202,9 +202,8 @@ export default function Home() {
 
               <h1 className="animate-on-load stagger-2 font-display leading-[0.92] text-ink"
                 style={{ fontSize: 'clamp(3rem,8vw,6.5rem)', opacity: 0 }}>
-                Muhammad<br />
-                <em className="text-rust" style={{ fontStyle: 'italic' }}>Muzammil</em><br />
-                Abid
+                Haroon<br />
+                <em className="text-rust" style={{ fontStyle: 'italic' }}>Mubeen</em>
               </h1>
 
               <p className="animate-on-load stagger-3 mt-8 text-mist text-lg leading-relaxed max-w-xl"
@@ -219,44 +218,21 @@ export default function Home() {
                   className="px-8 py-4 bg-ink text-paper font-mono text-sm tracking-wider hover:bg-rust transition-colors duration-300">
                   View Work →
                 </a>
-                <a href="mailto:mm1225121@gmail.com"
+                {/* <a href="mailto:mm1225121@gmail.com"
                   className="px-8 py-4 border border-ink text-ink font-mono text-sm tracking-wider hover:border-rust hover:text-rust transition-colors duration-300">
                   Get in Touch
-                </a>
+                </a> */}
                 {/* Download CV */}
-                <a href="/cv.pdf" download
+                {/* <a href="/cv.pdf" download
                   className="px-8 py-4 border border-mist/40 text-mist font-mono text-sm tracking-wider hover:border-rust hover:text-rust transition-colors duration-300 flex items-center gap-2">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/>
                   </svg>
                   Download CV
-                </a>
+                </a> */}
               </div>
 
               {/* Social + contact */}
-              <div className="animate-on-load stagger-5 mt-12 flex flex-wrap gap-6 items-center" style={{ opacity: 0 }}>
-                {[
-                  { label: 'Email', value: 'mm1225121@gmail.com', href: 'mailto:mm1225121@gmail.com' },
-                  { label: 'Phone', value: '+92304-8002661',      href: 'tel:+923048002661' },
-                  { label: 'Location', value: 'Multan, Pakistan', href: '#' },
-                ].map(c => (
-                  <a key={c.label} href={c.href} className="group">
-                    <div className="font-mono text-[0.6rem] text-mist tracking-widest mb-1 uppercase">{c.label}</div>
-                    <div className="text-sm text-ink group-hover:text-rust transition-colors">{c.value}</div>
-                  </a>
-                ))}
-
-                <div className="w-px h-8 bg-ink/10 hidden sm:block" />
-
-                {/* Social icons */}
-                {/* {socialLinks.map(s => (
-                  <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-mist hover:text-ink transition-colors group">
-                    <span className="group-hover:text-rust transition-colors">{s.icon}</span>
-                    <span className="font-mono text-[0.65rem] tracking-wider">{s.label}</span>
-                  </a>
-                ))} */}
-              </div>
             </div>
 
             {/* Stat cards */}
@@ -280,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* ── EXPERIENCE ── */}
-      <section id="experience" className="py-32 bg-ink text-paper relative overflow-hidden">
+      {/* <section id="experience" className="py-32 bg-ink text-paper relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: 'repeating-linear-gradient(45deg,#F5F0E8 0,#F5F0E8 1px,transparent 0,transparent 50%)',
           backgroundSize: '20px 20px'
@@ -315,7 +291,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── SKILLS ── */}
       <section id="skills" className="py-32 bg-cream">
@@ -388,7 +364,7 @@ export default function Home() {
 
             {/* Social links block */}
             <div className="flex flex-wrap gap-4">
-              {socialLinks.map(s => (
+              {/* {socialLinks.map(s => (
                 <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 border border-paper/20 hover:border-rust text-paper/60 hover:text-rust px-4 py-2.5 font-mono text-[0.65rem] transition-all">
                   <span>{s.icon}</span>
@@ -398,7 +374,7 @@ export default function Home() {
               <a href="mailto:mm1225121@gmail.com"
                 className="flex items-center gap-2 border border-paper/20 hover:border-rust text-paper/60 hover:text-rust px-4 py-2.5 font-mono text-[0.65rem] transition-all">
                 ✉ Email Me
-              </a>
+              </a> */}
             </div>
 
             <div className="mt-6 inline-block border border-paper/10 px-4 py-2">
@@ -427,7 +403,7 @@ export default function Home() {
       </section>
 
       {/* ── CONTACT ── */}
-      <section id="contact" className="py-32 bg-cream text-center">
+      {/* <section id="contact" className="py-32 bg-cream text-center">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <SectionLabel text="Let's Work Together" />
           <h2 className="font-display text-ink mt-4 mb-6 leading-none" style={{ fontSize: 'clamp(3rem,8vw,7rem)' }}>
@@ -449,17 +425,17 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <footer className="bg-ink border-t border-paper/5 py-8">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <span className="font-mono text-[0.65rem] text-paper/40">© 2024 Muhammad Muzammil Abid</span>
-          <div className="flex items-center gap-6">
+          <span className="font-mono text-[0.65rem] text-paper/40">© 2024 Haroon Mubeen</span>
+          {/* <div className="flex items-center gap-6">
             {socialLinks.map(s => (
               <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
                 className="text-paper/30 hover:text-paper/70 transition-colors">{s.icon}</a>
             ))}
-          </div>
+          </div> */}
           <span className="font-mono text-[0.65rem] text-paper/40">Full Stack Engineer · Multan, Pakistan</span>
         </div>
       </footer>
