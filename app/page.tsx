@@ -347,6 +347,60 @@ export default function Home() {
       </section>
 
       {/* ── ABOUT / EDUCATION ── */}
+      <section id="about" className="py-32 bg-ink text-paper">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12  gap-20">
+          <div>
+            <SectionLabel text="About Me" />
+            <h2 className="font-display text-paper mt-4 mb-8" style={{ fontSize: 'clamp(2.5rem,5vw,4rem)' }}>Who I Am</h2>
+            <p className="text-paper/70 leading-relaxed text-lg mb-6">
+              I&apos;m a Full Stack Engineer based in Multan, Pakistan, with over 3 years of experience
+              building production-grade systems. My strength is backend architecture — microservices,
+              real-time WebSocket systems, background job pipelines, and database design.
+            </p>
+            <p className="text-paper/70 leading-relaxed text-lg mb-8">
+              Currently at Mux Tech PVT LTD, leading development of a fleet management platform
+              serving real operators. Actively exploring AI automation and LLM integrations.
+            </p>
+
+            {/* Social links block */}
+            <div className="flex flex-wrap gap-4">
+              {/* {socialLinks.map(s => (
+                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 border border-paper/20 hover:border-rust text-paper/60 hover:text-rust px-4 py-2.5 font-mono text-[0.65rem] transition-all">
+                  <span>{s.icon}</span>
+                  {s.label} ↗
+                </a>
+              ))}
+              <a href="mailto:mm1225121@gmail.com"
+                className="flex items-center gap-2 border border-paper/20 hover:border-rust text-paper/60 hover:text-rust px-4 py-2.5 font-mono text-[0.65rem] transition-all">
+                ✉ Email Me
+              </a> */}
+            </div>
+
+            <div className="mt-6 inline-block border border-paper/10 px-4 py-2">
+              <span className="font-mono text-[0.65rem] text-mist">Open to Remote Opportunities</span>
+            </div>
+          </div>
+
+          {/* <div>
+            <SectionLabel text="Education" />
+            <h2 className="font-display text-paper mt-4 mb-10" style={{ fontSize: 'clamp(2.5rem,5vw,4rem)' }}>Academics</h2>
+            <div className="border-l-2 border-rust pl-6 mb-8">
+              <div className="font-mono text-[0.65rem] text-rust tracking-widest mb-2">Apr 2018 – Mar 2022</div>
+              <h3 className="font-display text-xl text-paper">BSc Information Technology</h3>
+              <p className="text-paper/60 text-sm mt-1">University of Southern Punjab, Multan</p>
+              <div className="mt-2 inline-block bg-rust/20 border border-rust/30 px-3 py-1">
+                <span className="font-mono text-[0.65rem] text-rust">GPA: 3.19 / 4.00</span>
+              </div>
+            </div>
+            <div className="border-l-2 border-paper/20 pl-6">
+              <div className="font-mono text-[0.65rem] text-mist tracking-widest mb-2">Sep 2015 – May 2017</div>
+              <h3 className="font-display text-xl text-paper">Intermediate</h3>
+              <p className="text-paper/60 text-sm mt-1">BISE Multan, Pakistan</p>
+            </div>
+          </div> */}
+        </div>
+      </section>
 
       {/* ── CONTACT ── */}
       {/* <section id="contact" className="py-32 bg-cream text-center">
